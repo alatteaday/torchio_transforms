@@ -13,7 +13,7 @@ To run this notebook, you'll need the following Python libraries:
 
 ## How to run
 
-1. **Clone the repository**:
+### **Clone the repository**:
 ```
 git clone https://github.com/alatteaday/torchio_transforms
 cd torchio_transforms
