@@ -13,35 +13,33 @@ To run this notebook, you'll need the following Python libraries:
 
 ## How to run
 
-1. **Clone the repository**
+1. **Clone the repository**:
 ```
 git clone https://github.com/alatteaday/torchio_transforms
 cd torchio_transforms
 ```
 
-2. **Install the dependencies using pip**
+2. **Install the dependencies using pip**:
 ```
 pip install torch torchio matplotlib
 ```
 
-3. **Open the Jupyter notebook**
+3. **Open the Jupyter notebook**:
 ```
 jupyter notebook tutorial.ipynb
 ```
 
-4. **Load image**
-
-In the notebook, assign the directory of the image that you want to transform in the `tio.Subject` part. For example:
+4. **Load image**: In the notebook, assign the directory of the image that you want to transform in the `tio.Subject` part. For example:
 ```
 img = tio.Subject(
     t1=tio.ScalarImage('path/to/your/image')  # Replace with your image
 )
 ``` 
 
-5. **Transform the image by referring to the example codes**
-
+5. **Transform the image by referring to the example codes**:
 Refer to the example codes provided in the notebook to apply various transformations. 
 Each example demonstrates how to add a specific artifact to the MRI image. 
+The arguments are set to their default values.
 For instance, to add random motion artifacts:
 ```
 motion = transforms.RandomMotion(
@@ -50,5 +48,3 @@ motion = transforms.RandomMotion(
 transformed_img = motion(img)
 transformed_img.plot(figsize=(10,5))
 ```
-The arguments are set to their default values.
-
