@@ -50,4 +50,5 @@ motion = transforms.RandomMotion(
 transformed_img = motion(img)
 transformed_img.plot(figsize=(10,5))
 ```
+The arguments are set to their default values.
 
